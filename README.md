@@ -1,6 +1,4 @@
 # api-client-generator
-[![CircleCI](https://circleci.com/gh/imunew/api-client-generator.svg?style=svg)](https://circleci.com/gh/imunew/api-client-generator)
-[![Coverage Status](https://coveralls.io/repos/github/imunew/api-client-generator/badge.svg)](https://coveralls.io/github/imunew/api-client-generator)
 
 ## What is api-client-generator?
 This is a toolset to generate API client from Swagger specification.
