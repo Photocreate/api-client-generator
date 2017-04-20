@@ -1,0 +1,8 @@
+{% if method.getArgumentsWith(['query']) is not empty %}
+            'query' => [
+{% for query in method.getArgumentsWith(['query']) %}
+                '{{ query.getName() }}' => {{ query.getVariable() }}{% if loop.length > 1 and not loop.last %},{% endif %}
+
+{% endfor %}
+            ]
+{% endif %}

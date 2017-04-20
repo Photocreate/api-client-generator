@@ -1,0 +1,9 @@
+{% if method.getArgumentsWith(['header']) is not empty %}
+            'headers' => [
+{% for header in method.getArgumentsWith(['header']) %}
+                '{{ header.getName() }}' => {{ header.getVariable() }}{% if loop.length > 1 and not loop.last %},{% endif %}
+
+{% endfor %}
+            ]{% if method.getArgumentsWithout(['path', 'header']) is not empty %},{% endif %}
+
+{% endif %}

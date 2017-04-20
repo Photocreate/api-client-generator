@@ -1,0 +1,4 @@
+{% for argument in method.getArgumentsWithout(['path', 'header']) %}
+            '{{ argument.getName() }}' => {{ argument.getVariable() }}{% if loop.length > 1 and not loop.last %},{% endif %}
+
+{% endfor %}

@@ -1,0 +1,15 @@
+machine:
+  timezone:
+    Asia/Tokyo
+  services:
+    - docker
+dependencies:
+  pre:
+    - echo "date.timezone = Asia/Tokyo" >> /opt/circleci/php/$(phpenv global)/etc/conf.d/date.ini
+test:
+  override:
+    - docker-compose -f example/petstore/docker-compose.yml up -d; sleep 10
+    - mkdir -p build/logs
+    - vendor/bin/phpunit -c . --coverage-clover build/logs/clover.xml
+  post:
+    - vendor/bin/coveralls -v

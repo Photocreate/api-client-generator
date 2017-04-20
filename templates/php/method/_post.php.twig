@@ -1,0 +1,7 @@
+{% if method.hasBodyOnly() %}
+    {%- include 'php/method/post/_body.php.twig' %}
+{% elseif method.getGuzzleRequestOption() in ['multipart'] %}
+    {%- include 'php/method/post/_multipart.php.twig' %}
+{% else %}
+    {%- include 'php/method/post/_default.php.twig' %}
+{% endif %}

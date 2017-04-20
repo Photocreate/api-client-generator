@@ -1,0 +1,34 @@
+{
+    "name": "imunew/api-client-generator",
+    "version": "0.1.0",
+    "description": "This is a toolset to generate API client from Swagger specification.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Motohiro Imura",
+            "email": "imunew@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Imunew\\Api\\Client\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^5.6 || ^7.0",
+        "twig/twig": "1.*",
+        "symfony/console": "~2.8",
+        "pimple/pimple": "^3.0",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit-mock-objects": "^3.4",
+        "phpunit/phpunit": "^5.7",
+        "satooshi/php-coveralls": "^1.0"
+    },
+    "bin": [
+        "bin/api-client-generator"
+    ],
+    "minimum-stability": "dev"
+}

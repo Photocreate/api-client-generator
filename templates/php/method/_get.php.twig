@@ -1,0 +1,4 @@
+{% for argument in method.getArgumentsWithout(['query', 'path']) %}
+            '{{ argument.getName() }}' => {{ argument.getVariable() }},
+{% endfor %}
+{% include 'php/method/get/_query.php.twig' %}

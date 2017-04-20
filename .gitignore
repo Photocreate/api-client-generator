@@ -1,0 +1,11 @@
+# Composer
+/vendor/
+
+# JetBrains
+/.idea/
+
+# php-cs-fixer
+/.php_cs.cache
+
+# coveralls
+/build/logs

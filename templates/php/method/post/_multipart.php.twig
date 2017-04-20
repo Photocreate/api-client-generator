@@ -1,0 +1,13 @@
+            '{{ method.getGuzzleRequestOption() }}' => [
+{% for argument in method.getArgumentsWithout(['path', 'header']) %}
+                [
+                    'name' => '{{ argument.getName() }}',
+{% if argument.getType() in ['file'] %}
+                    'contents' => fopen({{ argument.getVariable() }}, 'r')
+{% else %}
+                    'contents' => {{ argument.getVariable() }}
+{% endif %}
+                ]{% if loop.length > 1 and not loop.last %},{% endif %}
+
+{% endfor %}
+            ]

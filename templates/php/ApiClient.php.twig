@@ -1,0 +1,55 @@
+{{ '<?php' }}
+
+{% if api.getNamespace() is not empty %}
+namespace {{ api.getNamespace() }};
+{% endif %}
+
+use GuzzleHttp\Client;
+use Psr\Http\Message\ResponseInterface;
+
+/**
+ * Class {{ api.getClassName() }}
+ */
+class {{ api.getClassName() }}
+{
+    /** @var Client */
+    private $httpClient;
+
+    /**
+     * ApiClient constructor.
+     *
+     * @param Client $httpClient
+     */
+    public function __construct(Client $httpClient)
+    {
+        $this->httpClient = $httpClient;
+    }
+
+{% for method in api.getMethods() %}
+    /**
+{% for argument in method.getArguments() %}
+     * @param {{ argument.getType() }} {{ argument.getVariable() }}
+{% endfor %}
+     * @return ResponseInterface
+     */
+    public function {{ method.getName() }}({{ method.getVariables()|join(', ') }})
+    {
+        $uri = "{{ method.getUri() }}";
+
+        return $this->httpClient->{{ method.getHttpMethod() }}($uri, [
+{% include 'php/method/_headers.php.twig' %}
+{# POST, PUT, PATCH #}
+{% if method.getHttpMethod() in ['post', 'put', 'patch'] %}
+    {%- include 'php/method/_post.php.twig' %}
+{# GET #}
+{% elseif method.getHttpMethod() in ['get'] %}
+    {%- include 'php/method/_get.php.twig' %}
+{# DELETE ... #}
+{% else %}
+    {%- include 'php/method/_delete.php.twig' %}
+{% endif %}
+        ]);
+    }
+
+{% endfor %}
+}

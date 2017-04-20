@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit colors="true" bootstrap="vendor/autoload.php">
+    <testsuites>
+        <testsuite name="Test Suite">
+            <directory suffix="Test.php">./example/</directory>
+            <directory suffix="Test.php">./tests/</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./example/</directory>
+            <directory suffix=".php">./src/</directory>
+            <exclude>
+                <directory suffix="Test.php">./example/</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+
+</phpunit>

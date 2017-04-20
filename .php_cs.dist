@@ -1,0 +1,23 @@
+<?php
+namespace PhpCsFixer;
+
+return Config::create()
+    ->setRules([
+        '@PSR2' => true,
+        'single_import_per_statement' => false,
+        'array_syntax' => [
+            'syntax' => 'short',
+        ],
+        'binary_operator_spaces' => [
+            'align_double_arrow' => null,
+            'align_equals' => null,
+        ],
+    ])
+    ->setFinder(
+        Finder::create()
+            ->exclude('example')
+            ->in(__DIR__)
+    )
+    ->setUsingCache(true)
+    ->setCacheFile(__DIR__.'/.php_cs.cache')
+    ;
