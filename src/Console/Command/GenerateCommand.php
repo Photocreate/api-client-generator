@@ -1,11 +1,11 @@
 <?php
 
-namespace Imunew\Api\Client\Console\Command;
+namespace Photocreate\Api\Client\Console\Command;
 
 use Exception;
-use Imunew\Api\Client\Generator\GeneratorInterface;
-use Imunew\Api\Client\Linter\LinterInterface;
-use Imunew\Api\Client\Parser\ParserInterface;
+use Photocreate\Api\Client\Generator\GeneratorInterface;
+use Photocreate\Api\Client\Linter\LinterInterface;
+use Photocreate\Api\Client\Parser\ParserInterface;
 use InvalidArgumentException;
 use Pimple\Container;
 use Symfony\Component\Console\Command\Command;
@@ -15,7 +15,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 /**
  * Class GenerateCommand
- * @package Imunew\Api\Client\Console\Command
+ * @package Photocreate\Api\Client\Console\Command
  */
 class GenerateCommand extends Command
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Imunew\Api\Client\Console\Command;
+namespace Photocreate\Api\Client\Console\Command;
 
-use Imunew\Api\Client\Service\Provider\ConsoleProvider;
-use Imunew\Api\Client\Service\Provider\GeneratorProvider;
-use Imunew\Api\Client\Service\Provider\LinterProvider;
-use Imunew\Api\Client\Service\Provider\ParserProvider;
-use Imunew\Api\Client\Service\Provider\TwigProvider;
+use Photocreate\Api\Client\Service\Provider\ConsoleProvider;
+use Photocreate\Api\Client\Service\Provider\GeneratorProvider;
+use Photocreate\Api\Client\Service\Provider\LinterProvider;
+use Photocreate\Api\Client\Service\Provider\ParserProvider;
+use Photocreate\Api\Client\Service\Provider\TwigProvider;
 use PHPUnit\Framework\TestCase;
 use Pimple\Container;
 use Symfony\Component\Console\Application;

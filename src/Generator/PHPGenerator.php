@@ -1,12 +1,12 @@
 <?php
 
-namespace Imunew\Api\Client\Generator;
+namespace Photocreate\Api\Client\Generator;
 
 use Twig_Environment;
 
 /**
  * Class PHPGenerator
- * @package Imunew\Api\Client\Generator
+ * @package Photocreate\Api\Client\Generator
  */
 class PHPGenerator extends AbstractGenerator
 {

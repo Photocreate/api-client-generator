@@ -1,14 +1,14 @@
 <?php
 
-namespace Imunew\Api\Client\Parser;
+namespace Photocreate\Api\Client\Parser;
 
-use Imunew\Api\Client\Model\PHP\ApiClient;
-use Imunew\Api\Client\Model\PHP\Argument;
-use Imunew\Api\Client\Model\PHP\Method;
+use Photocreate\Api\Client\Model\PHP\ApiClient;
+use Photocreate\Api\Client\Model\PHP\Argument;
+use Photocreate\Api\Client\Model\PHP\Method;
 
 /**
  * Class PHPParser
- * @package Imunew\Api\Client\Parser
+ * @package Photocreate\Api\Client\Parser
  */
 class PHPParser implements ParserInterface
 {

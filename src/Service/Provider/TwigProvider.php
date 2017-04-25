@@ -1,6 +1,6 @@
 <?php
 
-namespace Imunew\Api\Client\Service\Provider;
+namespace Photocreate\Api\Client\Service\Provider;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

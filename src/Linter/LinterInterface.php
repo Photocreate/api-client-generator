@@ -1,10 +1,10 @@
 <?php
 
-namespace Imunew\Api\Client\Linter;
+namespace Photocreate\Api\Client\Linter;
 
 /**
  * Interface LinterInterface
- * @package Imunew\Api\Client\Linter
+ * @package Photocreate\Api\Client\Linter
  */
 interface LinterInterface
 {

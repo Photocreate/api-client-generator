@@ -1,12 +1,12 @@
 <?php
 
-namespace Imunew\Api\Client\Parser;
+namespace Photocreate\Api\Client\Parser;
 
-use Imunew\Api\Client\Model\ApiClientInterface;
+use Photocreate\Api\Client\Model\ApiClientInterface;
 
 /**
  * Interface ParserInterface
- * @package Imunew\Api\Client\Parser
+ * @package Photocreate\Api\Client\Parser
  */
 interface ParserInterface
 {

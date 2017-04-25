@@ -1,12 +1,12 @@
 <?php
 
-namespace Imunew\Api\Client\Generator;
+namespace Photocreate\Api\Client\Generator;
 
-use Imunew\Api\Client\Model\ApiClientInterface;
+use Photocreate\Api\Client\Model\ApiClientInterface;
 
 /**
  * Interface GeneratorInterface
- * @package Imunew\Api\Client\Generator
+ * @package Photocreate\Api\Client\Generator
  */
 interface GeneratorInterface
 {

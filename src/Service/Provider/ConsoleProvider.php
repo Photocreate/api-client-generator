@@ -1,8 +1,8 @@
 <?php
 
-namespace Imunew\Api\Client\Service\Provider;
+namespace Photocreate\Api\Client\Service\Provider;
 
-use Imunew\Api\Client\Console\Command\GenerateCommand;
+use Photocreate\Api\Client\Console\Command\GenerateCommand;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 use Symfony\Component\Console\Application;
