@@ -1,8 +1,8 @@
 <?php
 
-namespace Imunew\Api\Client\Service\Provider;
+namespace Photocreate\Api\Client\Service\Provider;
 
-use Imunew\Api\Client\Generator\PHPGenerator;
+use Photocreate\Api\Client\Generator\PHPGenerator;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 

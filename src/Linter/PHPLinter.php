@@ -1,6 +1,6 @@
 <?php
 
-namespace Imunew\Api\Client\Linter;
+namespace Photocreate\Api\Client\Linter;
 
 class PHPLinter implements LinterInterface
 {

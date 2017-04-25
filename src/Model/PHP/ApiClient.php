@@ -1,13 +1,13 @@
 <?php
 
-namespace Imunew\Api\Client\Model\PHP;
+namespace Photocreate\Api\Client\Model\PHP;
 
-use Imunew\Api\Client\Model\ApiClientInterface;
-use Imunew\Api\Client\Model\MethodInterface;
+use Photocreate\Api\Client\Model\ApiClientInterface;
+use Photocreate\Api\Client\Model\MethodInterface;
 
 /**
  * Class ApiClient
- * @package Imunew\Api\Client\Model\PHP
+ * @package Photocreate\Api\Client\Model\PHP
  */
 class ApiClient implements ApiClientInterface
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Imunew\Api\Client\Model\PHP;
+namespace Photocreate\Api\Client\Model\PHP;
 
-use Imunew\Api\Client\Model\ArgumentInterface;
+use Photocreate\Api\Client\Model\ArgumentInterface;
 
 /**
  * Class Argument
- * @package Imunew\Api\Client\Model\PHP
+ * @package Photocreate\Api\Client\Model\PHP
  */
 class Argument implements ArgumentInterface
 {

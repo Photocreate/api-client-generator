@@ -1,5 +1,5 @@
 {
-    "name": "imunew/api-client-generator",
+    "name": "photocreate/api-client-generator",
     "version": "0.1.0",
     "description": "This is a toolset to generate API client from Swagger specification.",
     "license": "MIT",
@@ -12,7 +12,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Imunew\\Api\\Client\\": "src/"
+            "Photocreate\\Api\\Client\\": "src/"
         }
     },
     "require": {

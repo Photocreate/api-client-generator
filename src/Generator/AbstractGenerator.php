@@ -1,13 +1,13 @@
 <?php
 
-namespace Imunew\Api\Client\Generator;
+namespace Photocreate\Api\Client\Generator;
 
-use Imunew\Api\Client\Model\ApiClientInterface;
+use Photocreate\Api\Client\Model\ApiClientInterface;
 use Twig_Environment;
 
 /**
  * Class AbstractGenerator
- * @package Imunew\Api\Client\Generator
+ * @package Photocreate\Api\Client\Generator
  */
 abstract class AbstractGenerator implements GeneratorInterface
 {

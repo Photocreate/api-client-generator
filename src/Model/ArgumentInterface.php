@@ -1,10 +1,10 @@
 <?php
 
-namespace Imunew\Api\Client\Model;
+namespace Photocreate\Api\Client\Model;
 
 /**
  * Interface ArgumentInterface
- * @package Imunew\Api\Client\Model
+ * @package Photocreate\Api\Client\Model
  */
 interface ArgumentInterface
 {

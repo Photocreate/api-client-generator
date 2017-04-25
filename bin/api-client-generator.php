@@ -17,11 +17,11 @@ if (!$autoloader) {
     die('vendor/autoload.php could not be found. Did you run `php composer.phar install`?');
 }
 
-use Imunew\Api\Client\Service\Provider\ConsoleProvider;
-use Imunew\Api\Client\Service\Provider\GeneratorProvider;
-use Imunew\Api\Client\Service\Provider\LinterProvider;
-use Imunew\Api\Client\Service\Provider\ParserProvider;
-use Imunew\Api\Client\Service\Provider\TwigProvider;
+use Photocreate\Api\Client\Service\Provider\ConsoleProvider;
+use Photocreate\Api\Client\Service\Provider\GeneratorProvider;
+use Photocreate\Api\Client\Service\Provider\LinterProvider;
+use Photocreate\Api\Client\Service\Provider\ParserProvider;
+use Photocreate\Api\Client\Service\Provider\TwigProvider;
 use Pimple\Container;
 use Symfony\Component\Console\Application;
 
