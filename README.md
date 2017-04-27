@@ -13,7 +13,7 @@ Supported languages are as below.
 ### Clone project
 
 ```bash
-$ git clone git@github.com:imunew/api-client-generator.git
+$ git clone git@github.com:Photocreate/api-client-generator.git
 $ cd api-client-generator
 ```
 
